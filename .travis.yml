@@ -10,7 +10,6 @@ after_script:
   - git init
   - git config user.name "dingwufu"
   - git config user.email "1571516625@qq.com"
-  - git commit -m "init"
   - git add -A
   - git commit -m "init"
   - git push --force "https://${TOKEN}@github.com/dingwufu/dingblog.git" master:gh-pages
