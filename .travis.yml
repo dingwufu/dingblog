@@ -13,7 +13,7 @@ after_script:
   - git commit -m "init"
   - git add -A
   - git commit -m "init"
-  - git push --force "https://github.com/dingwufu/dingblog.git"
+  - git push --force "https:${TOKEN}//github.com/dingwufu/dingblog.git"
 branches:
   only:
     - master
