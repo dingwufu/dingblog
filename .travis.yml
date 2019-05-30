@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "11"
+install:
+  - npm install
+script:
+  - hexo g
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "dingwufu"
+  - git config user.email "1571516625@qq.com"
+  - git commit -m "init"
+  - git add -A
+  - git commit -m "init"
+  - git push --force "https://github.com/dingwufu/dingblog.git"
+branches:
+  only:
+    - master
